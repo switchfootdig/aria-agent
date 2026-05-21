@@ -53,7 +53,7 @@ if "started" not in st.session_state:
 # ── UI: Header ────────────────────────────────────────────────
 col1, col2 = st.columns([1, 4])
 with col1:
-    st.image("static/acerez_logo.png", width=120)
+    st.image("static/acerez_logo2.png", width=120)
 with col2:
     st.markdown("## ⚡ ARIA")
     st.caption("Automated Requirements Intelligence Agent — Energy Transmission")

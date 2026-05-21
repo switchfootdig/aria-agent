@@ -51,9 +51,13 @@ if "started" not in st.session_state:
     st.session_state.started = False
 
 # ── UI: Header ────────────────────────────────────────────────
-st.markdown("## ⚡ ARIA")
-st.caption("Automated Requirements Intelligence Agent — Energy Transmission")
-
+col1, col2 = st.columns([1, 4])
+with col1:
+    st.image("static/acerez_logo.png", width=120)
+with col2:
+    st.markdown("## ⚡ ARIA")
+    st.caption("Automated Requirements Intelligence Agent — Energy Transmission")
+    
 # Phase progress bar
 phase = st.session_state.phase
 progress = phase / 7
